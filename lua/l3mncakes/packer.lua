@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
     use 'ervandew/supertab'
 
     use 'preservim/nerdcommenter'
-    
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
@@ -34,4 +34,8 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},
         }
     }
+
+    use 'github/copilot.vim'
+
+    use('christoomey/vim-tmux-navigator', {lazy = false})
 end)
